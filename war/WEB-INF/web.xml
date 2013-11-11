@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Dkconnexus</servlet-name>
+		<servlet-class>dkconnexus.DkconnexusServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Dkconnexus</servlet-name>
+		<url-pattern>/dkconnexus</url-pattern>
+	</servlet-mapping>
+  	
+  	<servlet>
+		<servlet-name>css</servlet-name>
+		<servlet-class>dkconnexus.CreateStreamServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>css</servlet-name>
+		<url-pattern>/createStreamServlet</url-pattern> <!-- This corresponds to the action in the form -->
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>asAPI</servlet-name>
+		<servlet-class>dkconnexus.AllStreamsAPI</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>asAPI</servlet-name>
+		<url-pattern>/AllStreamsAPI</url-pattern> <!-- This corresponds to the action in the form -->
+	</servlet-mapping>
+	
+	  	<servlet>
+		<servlet-name>addsub</servlet-name>
+		<servlet-class>dkconnexus.AddSubscriberServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>addsub</servlet-name>
+		<url-pattern>/addsubscriber*</url-pattern> <!-- This corresponds to the action in the form -->
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Upload</servlet-name>
+		<servlet-class>dkconnexus.Upload</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>rpt</servlet-name>
+		<servlet-class>dkconnexus.SendReport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>rpt</servlet-name>
+		<url-pattern>/sendreport</url-pattern> <!-- This corresponds to the action in the form -->
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>Upload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	
+  	<servlet>
+        <servlet-name>email</servlet-name>
+        <servlet-class>dkconnexus.ConnexusEmail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>email</servlet-name>
+        <url-pattern>/email</url-pattern>
+    </servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>dkconnexus.jsp</welcome-file>
+	</welcome-file-list>
+	
+		<filter>
+		<filter-name>ObjectifyFilter</filter-name>
+		<filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>ObjectifyFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+</web-app>

@@ -1,0 +1,38 @@
+body {
+/*	padding-left: 25em; */
+	font-family: Helvetica, sans-serif;
+	font-style:italic;
+	background-image:url("golden-gate.jpg");
+/*	background-size:1920px 1080px; 
+	background-size:50%;
+	background-color: #FFFFCC; */
+}
+p, a, table, form {
+	color: #FFFFFF;
+}
+h1, h2, h3, h4 {
+	color: #FFFFFF;
+	text-align: center;
+}
+table {
+	font-family: Helvetica, sans-serif;
+	font-style:italic;
+	border-collapse:separate;
+	border-spacing:100px 10px;
+}
+#nav li
+{
+display: inline;
+list-style-type: none;
+padding: 50px;
+/*padding-right: 50px;*/
+/*margin-botton: 50px;*/
+color: #FFFFFF;
+}
+
+ .center {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:center;
+  }

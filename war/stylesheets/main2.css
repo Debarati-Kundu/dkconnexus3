@@ -1,0 +1,17 @@
+body {
+/*	padding-left: 25em; */
+	font-family: Helvetica, sans-serif;
+	font-style:italic;
+	background-image:url("tilden.jpg");
+	background-size:1920px 1080px; 
+}
+
+#nav li
+{
+display: inline;
+list-style-type: none;
+/*padding: 50px;
+padding-right: 50px;*/
+margin-right: 50px;
+color: #FFFFFF;
+}

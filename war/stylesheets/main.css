@@ -1,0 +1,9 @@
+body {
+/*	padding-left: 25em; */
+	font-family: Verdana, Helvetica, sans-serif;
+	font-style:italic;
+	background-image:url("yosemite.jpg");
+	background-size:1920px 1080px; 
+/*	background-size:50%;
+	background-color: #FFFFCC; */
+}
